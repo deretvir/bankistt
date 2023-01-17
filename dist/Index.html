@@ -9,24 +9,25 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
-    <header class="header" id="#">
+<body class="app">
+<app-header></app-header>
+<app-section1></app-section1>
+<app-section2></app-section2>
+<footer></footer>
 
-        <nav class='nav sticky'>
-            <div class="nav__logo">
-                <a href="#"><img src="/img/logo.png">
+    <header class="app__header" id="#">
+        <nav class="app__nav app__sticky">
+            <div class="app__nav-logo">
+                <a href="#"><img class="app__nav-img" src="/img/logo.png">
             </div>
-            <ul class='nav__menu'>
-                <li class="nav__menu-item"><a>Features</a></li>
-                <li class="nav__menu-item"><a>Operations</a></li>
-                <li class="nav__menu-item"><a>Testimonials</a></li>
-                <li class="nav__menu-item btn"><a>Open Account</a></li>
+            <ul class="app__nav-menu">
+                <li class="app__nav-menu-item"><a>Features</a></li>
+                <li class="app__nav-menu-item"><a>Operations</a></li>
+                <li class="app__nav-menu-item"><a>Testimonials</a></li>
+                <li class="app__nav-menu-item app__btn"><a>Open Account</a></li>
             </ul>
-
-
-
         </nav>
-        <section class="section1">
+        <section class="app__header-section">
             <div class="section1__col1">
                 <h1 class="section1__col1-h1">When <div class="section1__col1-backlight">
                         <span>banking</span>
@@ -41,13 +42,11 @@
             <div class="section1__col2">
                 <img src="/img/hero.png" alt="">
             </div>
-
         </section>
-
     </header>
 
-    <section class="section2">
-        <div class="section2__row1">
+    <section class="app__features-section">
+        <div class="app__features-section-row1">
             <p class="section2__title">FEATURES</p>
             <h1 class="section2__header">Everything you need in a modern bank<br> and more.</h1>
         </div>
@@ -154,10 +153,8 @@
                 <p>London, Uk</p>
 
             </div>
-            <button class="section4__slider--left slider-btn">←
-            </button>
-            <button class="section4__slider--right slider-btn">→
-            </button>
+            <button class="section4__slider--left slider-btn">←</button>
+            <button class="section4__slider--right slider-btn">→</button>
 
         </div>
     </section>

@@ -1,0 +1,63 @@
+@mixin theme() {
+  .section1 {
+    padding: 2rem 0rem;
+
+    display: grid;
+    gap: 1vw;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    //justify-content: center;
+    align-items: flex-start;
+    justify-items: center;
+    flex: 1;
+
+    &__btn--scrool-to {
+      margin-top: 2em;
+      cursor: pointer;
+      text-decoration: underline;
+      text-underline-offset: 2em;
+      color: config.$svg;
+      text-underline-offset: 8px;
+      font-size: 1.3rem;
+      transition: color 0.5s;
+    }
+
+    &__btn--scrool-to:hover {
+      color: rgba(173, 255, 47, 0.8);
+    }
+
+    &__col2 {
+      img {
+        transform: translateY(-2em);
+        width: 80%;
+      }
+    }
+
+    &__col1-h1,
+    &__col1-h2 {
+      color: config.$sectionDiscription;
+    }
+    &__col1-h1 {
+      font-size: 5rem;
+      line-height: 1;
+    }
+    &__col1-h2 {
+      margin-top: 1em;
+      font-size: 2rem;
+    }
+
+    &__col1-backlight,
+    &__col1-backlight > span {
+      display: inline-block;
+    }
+
+    &__col1-backlight {
+      padding: 15px;
+      background-color: config.$svg;
+      transform: skew(-15deg);
+      span {
+        transform: skew(15deg);
+      }
+    }
+  }
+}

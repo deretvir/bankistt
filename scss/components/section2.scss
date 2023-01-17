@@ -1,0 +1,44 @@
+.section2 {
+  padding: 5rem 15rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  svg {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: config.$svg;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+
+  &__row1 {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  &__feature,
+  &__feature-img {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  &__feature-img {
+    filter: blur(1.5rem);
+    height: 90%;
+  }
+}

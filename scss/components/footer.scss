@@ -1,0 +1,33 @@
+.footer {
+  padding: 7rem 3rem;
+  margin: 0 auto;
+  background-color: config.$section5;
+  &-nav {
+    margin: 0 auto 0 auto;
+    max-width: 58rem;
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      li {
+        color: config.$navBackround;
+        font-size: 1.2rem;
+        cursor: pointer;
+        padding: 1rem;
+      }
+    }
+  }
+
+  img {
+    height: 5rem;
+    margin: 2rem auto;
+    display: block;
+  }
+  p {
+    text-align: center;
+    color: config.$navBackround;
+  }
+}
